@@ -1,11 +1,13 @@
 import React from "react";
 import "./App.css";
 import Icon from "./components/Icon/Icon";
+import {  DiAndroid } from "react-icons/di";
 
 function App() {
   return (
     <div className="App">
-      <Icon size={40} color="red" width={12} />
+      <Icon size="20vh" color="red" text="Hello" icon={DiAndroid} />
+     
     </div>
   );
 }
