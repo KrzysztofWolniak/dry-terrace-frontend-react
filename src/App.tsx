@@ -7,8 +7,10 @@ import {IconFunctionComp} from"./components/Icon/IconFunctionComp"
 function App() {
   return (
     <div className="App">
-      <Icon size="200" color="blue" text="Class Component" icon={DiAndroid}/> 
-      <IconFunctionComp size="200" color="red" text="Function Component" icon={DiAndroid}/>
+      
+      <IconFunctionComp size="48" color="red" text="Function " icon={DiAndroid}/>
+
+      <IconFunctionComp size="48" color="red" text="Function Component" icon={DiAndroid}/>
 
 
     </div>
