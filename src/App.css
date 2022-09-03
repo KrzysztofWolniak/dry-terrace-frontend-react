@@ -1,12 +1,31 @@
 .App {
   text-align: center;
   display: flex;
+  transition: all 1s;
+ 
 }
 .test{
-  color:aqua;
-  margin:auto
+  
+  margin:auto;
+  
+  
 }
 
+svg{
+  margin:auto;
+  transition: all 1s;
+}
+
+
 .test3{
+  width:20%;
   display: flex;
+}
+@keyframes rollout {
+  0% { transform: translateY(-100px); }
+  100% { transform: none; }
+}
+
+.roll-out {
+  animation: rollout 0.4s;
 }
