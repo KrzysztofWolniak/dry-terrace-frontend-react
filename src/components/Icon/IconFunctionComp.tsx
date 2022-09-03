@@ -19,27 +19,32 @@ interface IconProps {
 export const IconFunctionComp = (props:IconProps) => {
     const [isVisible,setIsVisible]= useState(false)
     const transition = useTransition(isVisible,{
-        from:{opacity:0},
-        enter:{opacity:1},
-        leave:{opacity:0},
+        from:{opacity:0, width:"0%", },
+        enter:{opacity:1, width: "100%"},
+        leave:{opacity:0,width:"0%",padding:"0px"},
+        
       })
+      const elo=React.createElement(props.icon)
   return (
     <IconContext.Provider
         value={{
           size: props.size,
           color: props.color,
-          className: "roll-out",
+          className: "obraz",
+          
+         
         }}
       >
         <div
-          className="test3"
+          className={isVisible? "showed":" test3"}
           onMouseEnter={() => setIsVisible(true)}
           onMouseLeave={() => setIsVisible(false)}
         >
           {React.createElement(props.icon)}
           {transition((style,item)=>
-          item?<animated.a style={style} key={props.text} className="test">{props.text}</animated.a>:''
+          item?<animated.a style={style}  className="text">{props.text}</animated.a>:''
           )}
+         
         </div>
       </IconContext.Provider>
   )
