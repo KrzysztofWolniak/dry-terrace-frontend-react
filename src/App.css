@@ -34,7 +34,7 @@ min-width:48px
 }
 .showed{
   display:flex;
-  width: 8.5%;
+  width: 8.5vw;
   animation:rollout 0.5s;
   margin: 30px 20px;
 }
@@ -42,10 +42,10 @@ min-width:48px
 
 @keyframes rollout {
   0% {width:48px }
-  100% { width:8.5% }
+  100% { width:8.5vw }
 }
 @keyframes rollout2 {
-  0% {width:8.5% }
+  0% {width:8.5vw }
   100% { width:48px }
 }
 @keyframes rollout3 {
