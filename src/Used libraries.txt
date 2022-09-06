@@ -1,0 +1,4 @@
+Libriaries used in this aplication:
+- react-icons
+- react-spring
+- framer-motion

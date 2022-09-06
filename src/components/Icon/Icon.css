@@ -1,0 +1,25 @@
+svg{
+    margin:auto;
+    transition: all 0.1s;
+  }
+  .text{
+   margin:auto;
+   overflow: hidden;
+   border-style: solid;
+   border-width: 1px;
+   
+   
+  }
+  .obraz{
+  animation:rollout3 0.4s;
+  min-width:48px
+  }
+  .textConst {
+    margin: 30px 20px;
+    display:flex;
+  
+  }
+  @keyframes rollout3 {
+    0% {opacity:0 }
+    100% { opacity:1  }
+  }
