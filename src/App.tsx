@@ -1,6 +1,5 @@
 import React from "react";
 import "./App.css";
-import Icon from "./components/Icon/Icon";
 import { DiAndroid } from "react-icons/di";
 import { IconFunctionComp } from "./components/Icon/IconFunctionComp";
 
