@@ -1,42 +1,18 @@
 import React from "react";
+import { Routes, Route } from "react-router-dom";
 import "./App.css";
-import { DiAndroid } from "react-icons/di";
-import { IconFunctionComp } from "./components/Icon/IconFunctionComp";
+import NavigationBar from "./components/NavigationBar/NavigationBar";
+import { Home } from "./routes/home/Home";
+import { Icons } from "./routes/icons/Icons";
 
 function App() {
   return (
     <div className="App">
-      <IconFunctionComp
-        size="48"
-        color="red"
-        text="Function "
-        icon={DiAndroid}
-      />
-
-      <IconFunctionComp
-        size="48"
-        color="red"
-        text="Function Component"
-        icon={DiAndroid}
-      />
-      <IconFunctionComp
-        size="48"
-        color="red"
-        text="Another Comp"
-        icon={DiAndroid}
-      />
-      <IconFunctionComp
-        size="48"
-        color="red"
-        text="Elo my friend"
-        icon={DiAndroid}
-      />
-      <IconFunctionComp
-        size="48"
-        color="red"
-        text="123123123123123123123"
-        icon={DiAndroid}
-      />
+       <NavigationBar></NavigationBar> 
+      <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/icons" element={<Icons />} />
+      </Routes>
     </div>
   );
 }
