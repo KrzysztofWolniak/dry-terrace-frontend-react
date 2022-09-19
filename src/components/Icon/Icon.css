@@ -3,10 +3,11 @@ svg{
     transition: all 0.1s;
   }
   .text{
+  text-align: center;
    margin:auto;
    overflow: hidden;
-   border-style: solid;
-   border-width: 1px;
+   /* border-style: solid;
+   border-width: 1px; */
    
    
   }
@@ -15,7 +16,8 @@ svg{
   min-width:48px
   }
   .textConst {
-    margin: 30px 20px;
+    
+    /* margin: 30px 20px; */
     display:flex;
   
   }
