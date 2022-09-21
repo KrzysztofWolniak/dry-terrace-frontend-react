@@ -90,8 +90,8 @@ export const IconFunctionComp = (props: IconProps) => {
       ) : (
         <motion.div
           style={{ minWidth: props.size }}
-          whileTap={{ y: "0%" }}
-          animate={ isVisible? {y:"-20%"}:{}}
+          // whileTap={{ y: "0%" }}
+          // animate={ isVisible? {y:"-20%"}:{}}
           className={compConstClassName}
           onMouseEnter={() => setIsVisible(true)}
           onMouseLeave={() => setIsVisible(false)}
