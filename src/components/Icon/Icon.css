@@ -5,11 +5,18 @@ svg{
   .text{
   text-align: center;
    margin:auto;
+  
    overflow: hidden;
    /* border-style: solid;
    border-width: 1px; */
    
    
+  }
+  .no-wrap-text{
+    white-space:nowrap;
+  }
+  .wrap-text{
+    white-space:wrap;
   }
   .icon{
   animation:rollout3 0.4s;

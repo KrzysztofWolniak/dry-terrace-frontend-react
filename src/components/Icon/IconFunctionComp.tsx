@@ -16,6 +16,7 @@ interface IconProps {
   orientation?: string;
   text?: string;
   onHover?: boolean;
+  wrapText?: boolean;
 }
 
 type IconType = (props: IconProps) => JSX.Element;
@@ -63,9 +64,9 @@ export const IconFunctionComp = (props: IconProps) => {
           style={{ minWidth: props.size }}
           animate={{
             width: isVisible
-              ? `calc(${findLongestWord(props.text!)}em + ${props.size}px - ${
-                  findLongestWord(props.text!) * 0.33
-                }em)`
+              ? (props.wrapText? `calc(${findLongestWord(props.text!)}em + ${props.size}px - ${
+                findLongestWord(props.text!) * 0.33
+              }em)` : "auto" )
               : `${props.size}px`,
           }}
           className={
@@ -79,9 +80,9 @@ export const IconFunctionComp = (props: IconProps) => {
           {React.createElement(props.icon)}
           {transition((style, item) =>
             item ? (
-              <animated.a style={style} className="text">
+              <animated.p style={style} className={props.wrapText ? "text wrap-text":"text no-wrap-text"}>
                 {props.text}
-              </animated.a>
+              </animated.p>
             ) : (
               ""
             )
