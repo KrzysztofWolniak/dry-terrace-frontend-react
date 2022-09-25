@@ -17,9 +17,9 @@ const NavigationBar = () => {
   return (
     <>
       <Nav>
-        <Link to="/">
+        <NavLink  to="/">
           <h1>Logo</h1>
-        </Link>
+        </NavLink>
         <Bars />
         <NavMenu>
           <NavLink to="/icons">
@@ -31,11 +31,11 @@ const NavigationBar = () => {
               onHover={false}
             />
           </NavLink>
-          <NavLink to="/item">
+          <NavLink to="/items">
             <IconFunctionComp
               size="48"
               color="#9D6B53"
-              text="ItemContainers"
+              text="Items"
               icon={DiAndroid}
             />
           </NavLink>

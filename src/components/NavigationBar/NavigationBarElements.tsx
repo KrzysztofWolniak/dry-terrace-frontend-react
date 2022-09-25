@@ -25,6 +25,9 @@ export const NavLink = styled(Link)`
     animation: pulse;
     animation-duration: 0.5s;
   }
+  &:first-of-type {
+    animation:none;
+  }
 `;
 
 export const Bars = styled(FaBars)`
@@ -51,6 +54,10 @@ export const NavMenu = styled.div`
   white-space: nowrap;
   @media screen and (max-width: 768px) {
     display: none;
+  }
+  &.first-child{
+    justify-content:flex-start;
+    margin:auto;
   }
 `;
 
