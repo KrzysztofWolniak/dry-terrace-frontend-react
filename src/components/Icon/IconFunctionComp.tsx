@@ -99,7 +99,7 @@ export const IconFunctionComp = (props: IconProps) => {
         >
           {React.createElement(props.icon)}
 
-          <a className="text">{props.text}</a>
+          <p className="text">{props.text}</p>
         </motion.div>
       )}
     </IconContext.Provider>
