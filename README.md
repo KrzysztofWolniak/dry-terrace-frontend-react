@@ -6,10 +6,9 @@ Online shop created to sell material covers for the terrace
 
 ## Roadmap
 
-- Finish Icon component
-- Create whole navbar component with react-router-dom
-- Create landing page, and item container 
+- Finish all logic in itemsPage
 - Add More Features
+- Create landing page 
 - Additional steps will be announced with the completion of the previous ones
 
 
@@ -24,6 +23,8 @@ Online shop created to sell material covers for the terrace
 - react-icons
 - react-spring
 - framer-motion <3
+- styled-components
+- mui/material
 
 
 
