@@ -14,7 +14,7 @@ Online shop created to sell material covers for the terrace
 
 ## Tech Stack
 
-**Client:** React, TypeScript, Redux*, Bootstrap* 
+**Client:** React, TypeScript, Redux, Bootstrap* 
 
 **Server:** Propably Node.js, still looking
 
@@ -25,13 +25,15 @@ Online shop created to sell material covers for the terrace
 - framer-motion <3
 - styled-components
 - mui/material
-
+- reduxjs/toolkit
+- react-redux
 
 
 ## Lessons Learned
 
 - Always make sure to check if your issue isn't already on stackoverflow
 - Don't try to reinvent the wheel, build in solution are highly optimized and were created to help You
+- Implement your state managment ASAP to save the complication of later implementation
 - Still learning... 
 
 
