@@ -4,16 +4,9 @@ import Card from "@mui/material/Card";
 import CardMedia from "@mui/material/CardMedia";
 import CardContent from "@mui/material/CardContent";
 import Typography from "@mui/material/Typography";
+import itemData from "../../interfaces/itemData";
 
-interface itemData{
-  image:string;
-  alt:string;
-  header:string;
-  text:string;
-  price:string;
-  onClickHandler?:Function;
-  id:string;
-}
+
 export const ItemContainer = (props:itemData) => {
   const [Id,setId]= useState(props.id);
   const onClickHandler = () => {
