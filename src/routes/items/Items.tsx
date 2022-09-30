@@ -1,45 +1,15 @@
 import React, { useState } from "react";
 import { ItemContainer } from "../../components/ItemContainer/ItemContainer";
+// import { useSelector, useDispatch } from 'react-redux'
+import { useAppSelector, useAppDispatch } from "../../hooks/reduxHooks";
 
 export const Items = () => {
-  const [itemsList, setItemsList] = useState([
-    {
-      id: "1",
-      text: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut voluptas
-  similique eius quia omnis consequatur illo saepe, suscipit nemo
-  repudiandae reprehenderit, perspiciatis illum? Qui ea provident quae
-  asperiores, recusandae aliquam.`,
-      header: "Roleta rzymska",
-      alt: "Roleta",
-      image: "https://random.imagecdn.app/345/140",
-      price: "140 zł/m2",
-    },
-    {
-      id: "22",
-      text: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut voluptas
-  similique eius quia omnis consequatur illo saepe, suscipit nemo
-  repudiandae reprehenderit, perspiciatis illum? Qui ea provident quae
-  asperiores, recusandae aliquam.`,
-      header: "Zadaszenie tkaninowe",
-      alt: "Roleta",
-      image: "https://random.imagecdn.app/345/140",
-      price: "140 zł/m2",
-    },
-    {
-      id: "33",
-      text: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut voluptas
-  similique eius quia omnis consequatur illo saepe, suscipit nemo
-  repudiandae reprehenderit, perspiciatis illum? Qui ea provident quae
-  asperiores, recusandae aliquam.`,
-      header: "Osłona silikonowa",
-      alt: "Roleta",
-      image: "https://random.imagecdn.app/345/140",
-      price: "140 zł/m2",
-    }
-  ]);
+  const itemsList = useAppSelector((state) => state.items.itemsList);
+  //for future inplementation \/
+  /*const dispatch = useAppDispatch();*/
   return (
     <div className="Items">
-      {itemsList.map((item,key) => (
+      {itemsList.map((item, key) => (
         <ItemContainer
           id={item.id}
           text={item.text}
@@ -50,7 +20,6 @@ export const Items = () => {
           key={key}
         ></ItemContainer>
       ))}
-      
     </div>
   );
 };
