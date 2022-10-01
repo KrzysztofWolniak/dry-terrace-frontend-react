@@ -5,12 +5,15 @@ import CardMedia from "@mui/material/CardMedia";
 import CardContent from "@mui/material/CardContent";
 import Typography from "@mui/material/Typography";
 import itemData from "../../interfaces/itemData";
+import { useNavigate } from "react-router-dom";
 
 
 export const ItemContainer = (props:itemData) => {
+  const navigate= useNavigate()
   const [Id,setId]= useState(props.id);
   const onClickHandler = () => {
     console.log(Id);
+    navigate('/itemdetails');
   };
   return (
     

@@ -4,6 +4,7 @@ import "./App.css";
 import NavigationBar from "./components/NavigationBar/NavigationBar";
 import { Home } from "./routes/home/Home";
 import { Icons } from "./routes/icons/Icons";
+import { ItemDetails } from "./routes/itemDetails/ItemDetails";
 import { Items } from "./routes/items/Items";
 
 function App() {
@@ -14,7 +15,7 @@ function App() {
       <Route path="/" element={<Home />} />
       <Route path="/icons" element={<Icons />} />
       <Route path="/items" element={<Items />} />
-
+      <Route path="/itemdetails" element={<ItemDetails />} />
       </Routes>
     </div>
   );

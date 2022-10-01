@@ -1,7 +1,9 @@
 import { createSlice } from '@reduxjs/toolkit'
+import color from '../../interfaces/color'
 import itemData from '../../interfaces/itemData'
 interface itemsState {
     itemsList: Array<itemData>
+    availableColors:Array<color>
 }
 
 const initialState:itemsState={
@@ -37,7 +39,39 @@ const initialState:itemsState={
         alt: "Roleta",
         image: "https://random.imagecdn.app/345/140",
         price: "140 zł/m2",
-      }]
+      }],
+      availableColors:[{
+        imgSrc:"https://random.imagecdn.app/100/100",
+        text:"Text"
+      },
+      {
+        imgSrc:"https://random.imagecdn.app/100/100",
+        text:"Text"
+      },
+      {
+        imgSrc:"https://random.imagecdn.app/100/100",
+        text:"Text"
+      },
+      {
+        imgSrc:"https://random.imagecdn.app/100/100",
+        text:"Text"
+      },{
+        imgSrc:"https://random.imagecdn.app/100/100",
+        text:"Text"
+      },
+      {
+        imgSrc:"https://random.imagecdn.app/100/100",
+        text:"Text"
+      },
+      {
+        imgSrc:"https://random.imagecdn.app/100/100",
+        text:"Text"
+      },
+      {
+        imgSrc:"https://random.imagecdn.app/100/100",
+        text:"Text"
+      }
+    ]
 }
 
 export const itemsSlice = createSlice({

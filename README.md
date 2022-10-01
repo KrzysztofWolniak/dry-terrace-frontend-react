@@ -14,11 +14,10 @@ Online shop created to sell material covers for the terrace
 
 ## Tech Stack
 
-**Client:** React, TypeScript, Redux, Bootstrap* 
+**Client:** React, TypeScript, Redux, Bootstrap 
 
 **Server:** Propably Node.js, still looking
 
-*Will be added
 ## Used Libraries
 - react-icons
 - react-spring
