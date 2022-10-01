@@ -48,10 +48,10 @@ export const NavMenu = styled.div`
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  margin-right: -24px;
+  margin-right: 24px;
   
-  width: 100vw;
-  white-space: nowrap;
+   width: 100vw;
+  white-space: nowrap; 
   @media screen and (max-width: 768px) {
     display: none;
   }
@@ -66,16 +66,17 @@ export const NavBtn = styled.nav`
   align-items: center;
   margin-right: 24px;
   
-   justify-content: flex-end;
-  width: 10vw;  
+   /* justify-content: flex-end;
+  width: 100vw;   */
   @media screen and (max-width: 768px) {
     display: none;
   }
 `;
 
 export const NavBtnLink = styled(Link)`
-  border-radius: 20px;
+  border-radius: 5px;
   background: #256ce1;
+  white-space: nowrap; 
   padding: 10px 22px;
   color: #fff;
   outline: none;
